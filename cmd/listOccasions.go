@@ -23,7 +23,7 @@ package cmd
 import (
 	"fmt"
 	"github.com/gosuri/uitable"
-	"github.com/mandrean/trafikverket-forarprov/pkg"
+	"github.com/mandrean/go-trafikverket/pkg"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"time"
