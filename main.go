@@ -20,7 +20,7 @@
 
 package main
 
-import "github.com/mandrean/trafikverket-forarprov/cmd"
+import "github.com/mandrean/go-trafikverket/cmd"
 
 func main() {
 	cmd.Execute()

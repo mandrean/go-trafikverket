@@ -1,5 +1,5 @@
-trafikverket-forarprov
-======================
+go-trafikverket
+===============
 
 A simple CLI tool and Go library for interacting with Trafikverket's Förarprov
 API.
@@ -10,25 +10,25 @@ Usage
 ### CLI
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sh
-go get -u github.com/mandrean/trafikverket-forarprov
+go get -u github.com/mandrean/go-trafikverket
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Then just run `trafikverket-forarprov` in your shell.
+Then just run `go-trafikverket` in your shell.
 
 #### Commands
 
-| **Commands**                                  | **Alias(es)**         | **Description**         |
-|-----------------------------------------------|-----------------------|-------------------------|
-| trafikverket-forarprov list                   | l                     |                         |
-| **List Subcommands**                          |                       |                         |
-| trafikverket-forarprov list licenceCategories | licenseCategories, lc | List licence categories |
-| trafikverket-forarprov list locations         | l                     | List exam locations     |
-| trafikverket-forarprov list occasions         | o                     | List exam occasions     |
+| **Commands**                           | **Alias(es)**         | **Description**         |
+|----------------------------------------|-----------------------|-------------------------|
+| go-trafikverket list                   | l                     |                         |
+| **List Subcommands**                   |                       |                         |
+| go-trafikverket list licenceCategories | licenseCategories, lc | List licence categories |
+| go-trafikverket list locations         | l                     | List exam locations     |
+| go-trafikverket list occasions         | o                     | List exam occasions     |
 
 ### Library
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sh
-go get -u github.com/mandrean/trafikverket-forarprov
+go get -u github.com/mandrean/go-trafikverket
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Then import the package in your code:
@@ -38,7 +38,7 @@ package main
 
 import (
     log
-    "github.com/mandrean/trafikverket-forarprov/pkg"
+    "github.com/mandrean/go-trafikverket/pkg"
 )
 
 func main() {

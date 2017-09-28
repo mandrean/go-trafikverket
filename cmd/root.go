@@ -40,7 +40,7 @@ var (
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:   "trafikverket-forarprov",
+	Use:   "go-trafikverket",
 	Short: "A brief description of your application",
 	Long:  `A CLI tool for interacting with Trafikverket's Förarprov APIs`,
 
@@ -63,7 +63,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.trafikverket-forarprov.yaml)")
+	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.go-trafikverket.yaml)")
 	RootCmd.PersistentFlags().StringVarP(&Output, "output", "o", "wide", "Output format. One of: json|yaml|wide. Default: wide")
 	RootCmd.PersistentFlags().BoolVarP(&Debug, "debug", "d", false, "debug output")
 }
@@ -81,9 +81,9 @@ func initConfig() {
 			os.Exit(1)
 		}
 
-		// Search config in home directory with name ".trafikverket-forarprov" (without extension).
+		// Search config in home directory with name ".go-trafikverket" (without extension).
 		viper.AddConfigPath(home)
-		viper.SetConfigName(".trafikverket-forarprov")
+		viper.SetConfigName(".go-trafikverket")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match

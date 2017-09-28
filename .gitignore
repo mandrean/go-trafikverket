@@ -3,7 +3,8 @@
 *.dll
 *.so
 *.dylib
-trafikverket-forarprov
+go-trafikverket
+vendor/
 
 # Test binary, build with `go test -c`
 *.test
